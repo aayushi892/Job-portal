@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f5f5f5;
+		}
+
+		h1 {
+			text-align: center;
+			color: #333;
+			font-variant: small-caps;
+		}
+
+		form {
+			max-width: 500px;
+			margin: 0 auto;
+			background-color: #fff;
+			padding: 20px;
+			box-shadow: 0px 0px 10px #ccc;
+			border-radius: 10px;
+		}
+
+		label {
+			display: block;
+			font-weight: bold;
+			margin-bottom: 5px;
+			color: #666;
+		}
+
+		input[type="text"],
+		input[type="tel"],
+		input[type="email"],
+		textarea {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin-bottom: 20px;
+			font-size: 16px;
+			color: #666;
+			box-sizing: border-box;
+		}
+
+		input[type="submit"] {
+			background-color: #008CBA;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #005f79;
+		}
+	</style>
+</head>
+<body>
+	<h1>SIGN UP</h1>
+	<form action="submit.php" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="phone">Mobile Number</label>
+		<input type="tel" id="phone" name="phone" required>
+
+		<label for="address">PUC Marks:</label>
+		<textarea id="marks" name="marks" required></textarea>
+
+		<label for="name">DD Number:</label>
+		<input type="text" id="ddnumber" name="ddnumber" required>
+
+		<label for="name">DD Amount:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email ID:</label>
+		<input type="email" id="email" name="email" required>
+
+		<input type="submit" value="Register">
+	</form>
+</body>
+</html>
